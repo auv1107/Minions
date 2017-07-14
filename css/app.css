@@ -143,3 +143,59 @@ text {
     font-size: 14px;
     color: rgba(65,65,65,0.68);
 }
+
+.mg-music {
+    width: 85px;
+    height: 85px;
+    right: 10px;
+    top: 50px;
+}
+
+.mg-fix {
+    position: fixed;
+}
+
+#rythem-bg {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#rythem-src {
+    position: absolute;
+    right: 30px;
+    top: 27px;
+}
+
+#rythem-name {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #197DBF;
+}
+
+.mg-record {
+    width: 67px;
+    height: 67px;
+    bottom: 16px;
+    right: 16px;
+}
+
+#record-pressed {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 67px;
+    height: 67px;
+}
+
+#record-normal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 67px;
+    height: 67px;
+}

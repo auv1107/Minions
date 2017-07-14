@@ -1,0 +1,21 @@
+
+<svg width="25px" height="31px" viewBox="0 0 25 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.8899075%" id="linearGradient-1">
+            <stop stop-color="#88DDFF" offset="0%"></stop>
+            <stop stop-color="#1EA5FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="share" transform="translate(-350.000000, -75.000000)" fill-rule="nonzero" fill="url(#linearGradient-1)">
+            <g id="Playing" transform="translate(337.000000, 65.000000)">
+                <g id="music" transform="translate(13.000000, 10.000000)">
+                    <polygon id="Shape" points="11.9727077 0 11.9727077 23.0650976 15.3901864 23.0650976 15.3901864 6.8339962 24.7872915 9.39710517 24.7872915 3.41747862"></polygon>
+                    <path d="M0.0134546402,23.0650976 C0.0134546402,27.3112648 3.45565328,30.7534634 7.7018205,30.7534634 C11.9479877,30.7534634 15.3901864,27.3112648 15.3901864,23.0650976 C15.3901864,18.8189304 11.9479877,15.3767317 7.7018205,15.3767317 C3.45565328,15.3767317 0.0134546402,18.8189304 0.0134546402,23.0650976 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
