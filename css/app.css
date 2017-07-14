@@ -1,0 +1,145 @@
+.mg-navbar-header {
+    background-image: linear-gradient(-192deg, #0FD6F7 0%, #0CBEFB 100%);
+}
+
+.mg-navbar-title {
+    /* 小黄人音乐: */
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 4px #009CBC;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.mg-navbar-brand {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+a.mg-navbar-title {
+    color: #fff;
+}
+
+.mg-body {
+    background-image: linear-gradient(-180deg, #FCF3A7 3%, #F7E36E 100%);
+    box-shadow: 0 1px 2px 0 rgba(181,162,50,0.47);
+    border-radius: 2px;
+    padding-bottom: 10px;
+}
+
+.mg-banner {
+    padding: 0px 12px;
+}
+
+.mg-tip {
+    /* 按住按钮不放录制声音: */
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #6B6B6B;
+}
+
+.mg-or {
+    /* 或者: */
+    font-family: PingFangSC-Semibold;
+    font-size: 12px;
+    color: #999999;
+}
+
+.mg-button {
+    /* DefaultGradientButton: */
+    border: 1px solid #20BCD8;
+    box-shadow: 0 2px 22px 0 rgba(190,190,190,0.50);
+    border-radius: 3px;
+    padding: 8px 22px;
+}
+
+.mg-button-default {
+    background-image: linear-gradient(-192deg, #0FD6F7 0%, #0CBEFB 100%);
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: rgba(255,255,255,0.93);
+}
+
+.mg-divider {
+}
+
+divider {
+    background: #BDBDBD;
+    margin-top: 12px;
+    float: left;
+    width: 100%;
+    height: 1px;
+}
+
+vertical-divider {
+    background: #BDA600;
+    float: left;
+    height: 80%;
+    width: 1px;
+}
+
+text {
+    display: inline-block;
+}
+
+.mg-order {
+    color: #8B8B8B;
+    font-size: 18px;
+}
+
+.mg-panel {
+    height: 52px;
+}
+
+.mg-panel > div {
+    height:100%;
+    display:table;
+}
+
+.mg-panel > div .vertical-center {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.mg-panel-title {
+    color: #383838;
+    font-size: 14px;
+}
+
+.mg-panel-desc {
+    color: #6E6E6E;
+    font-size: 13px;
+}
+
+.mg-panel-option {
+    background: #F5E26A;
+    box-shadow: inset 0 1px 3px 0 rgba(207,207,207,0.50);
+    height: 48px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.mg-panel-option > div {
+    height:100%;
+    display:table;
+}
+
+.mg-panel-option > div .vertical-center {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.mg-howto-title {
+    /* 玩法介绍: */
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #000000;
+}
+
+.mg-howto-desc {
+    /* 1. 录制或选择音乐文件 2. 等待自动: */
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(65,65,65,0.68);
+}
