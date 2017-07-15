@@ -65,6 +65,12 @@ a.mg-navbar-title {
     color: rgba(255,255,255,0.93);
 }
 
+.mg-button > label {
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
 .mg-divider {
 }
 
@@ -148,7 +154,7 @@ text {
     color: rgba(65,65,65,0.68);
 }
 
-.mg-music {
+#music-playing {
     width: 85px;
     height: 85px;
     right: 10px;
@@ -202,4 +208,37 @@ text {
     left: 0px;
     width: 67px;
     height: 67px;
+}
+
+#no-music {
+    /* 没有音乐: */
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(187,173,173,0.94);
+}
+
+.textOverflow {
+    white-space:nowrap;/*限制单行输出*/
+    text-overflow:ellipsis;/*只支持IE6(+)*/
+    overflow: hidden;
+    -o-text-overflow: ellipsis;/*Opera专用*/
+    -moz-binding: url('ov.xml#ellipsis');/*firefox下实现要配套对应的xml文件*/
+}
+
+#panel-option {
+    float:right;
+    display:table;
+    margin-right: 25px;
+}
+
+#panel-text {
+    float:left;
+    display:table;
+    margin-left:30px;
+}
+
+#panel-index {
+    float:left;
+    display:table;
+    margin-left:25px;
 }
