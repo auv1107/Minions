@@ -30,6 +30,11 @@ var musiclistcontainer = new Vue({
             var res = (file.artist || "") + join + (file.album || "");
             
             return res;
+        },
+        clicked: function (file) {
+            console.log('clicked');
+            console.log(file);
+            play(file);
         }
     }
 });
@@ -51,7 +56,9 @@ var appform = new Vue({
                     musiclistcontainer.append({
                         title: tags.title || file.name,
                         artist: tags.artist || "",
-                        album: tags.album || ""
+                        album: tags.album || "",
+                        url: file.urn || file.name,
+                        handle: file
                     });
                 });
             }

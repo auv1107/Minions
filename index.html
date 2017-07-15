@@ -12,6 +12,7 @@
         <script src="https://unpkg.com/vue"></script>
         <script src="js/id3-minimized.js"></script>
         <script src="js/id3-utils.js"></script>
+        <script src="js/audio.js"></script>
     </head>
     <body>
         <nav class="navbar">
@@ -66,7 +67,7 @@
                         </section>
 
                         <section id="music-list" v-if="!empty()">
-                        <div class="mg-panel" v-for="(file, index) in files">
+                        <div class="mg-panel" @click="clicked(file)" v-for="(file, index) in files">
                             <div id="panel-index" >
                                 <p class="mg-order center-block vertical-center">{{ index + 1 }}</p>
                             </div>

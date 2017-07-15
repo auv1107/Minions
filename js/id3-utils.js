@@ -1,7 +1,6 @@
 var $ = function(e){return document.getElementById(e);};
 
 function loadUrl(url, callback, reader) {
-    var startDate = new Date().getTime();
     ID3.loadTags(url, function() {
         var tags = ID3.getAllTags(url);
 	    if( callback ) {
@@ -23,7 +22,7 @@ function loadFromLink(link) {
 }
 
 function loadFromFile(file, callback) {
-    var url = file.urn ||file.name;
+    var url = file.urn || file.name;
     loadUrl(url, callback, FileAPIReader(file));
 }
 
