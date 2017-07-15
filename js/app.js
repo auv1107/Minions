@@ -3,9 +3,7 @@
 var musiclistcontainer = new Vue({
     el: '#music-list-container',
     data: {
-        files: [{
-            title: 'hhhfhdsifidsjfjj hhhfhdsifidsjfjj hhhfhdsifidsjfjj hhhfhdsifidsjfjj'
-        }]
+        files: []
     },
     methods: {
         empty: function () {
