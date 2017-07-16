@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
         <title>小黄人音乐</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -41,12 +41,12 @@
                     </div>
                     <div style="margin-top:7px">
                         <div id="app-form">
-                            <button class="center-block">
+                            <div class="text-center">
                                 <label for="xFile" class="mg-button mg-button-default">选择音乐文件</label>
                                 <form>
                                     <input type="file" id="xFile" ref="xFile" multiple @change="onchanged($event)" style="position:absolute;clip:rect(0 0 0 0);" accept="audio/*">
                                 </form>
-                            </button>
+                            </div>
                         </div>
                     </div>
                     

@@ -1,5 +1,5 @@
-body {
-    min-width: 379px;
+.navbar {
+    border: 0px;
 }
 
 .mg-navbar-header {
@@ -63,6 +63,7 @@ a.mg-navbar-title {
     font-family: PingFangSC-Semibold;
     font-size: 14px;
     color: rgba(255,255,255,0.93);
+    display: inline-block;
 }
 
 .mg-button > label {

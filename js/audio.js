@@ -12,6 +12,7 @@ function loadAudio(url, cb) {
                 cb(buffer);
             }
         }, function (e) {
+            console.log(e.status);
             console.log(e.name);
             console.log(e.message);
         });
