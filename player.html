@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+        <title>小黄人音乐</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	    <link rel="stylesheet" href="css/app.css">
+	    <link rel="stylesheet" href="css/player.css">
+        
+        <script src="js/vconsole.min.js"></script>
+        <script src="js/vue.js"></script>
+        <script src="js/id3-minimized.js"></script>
+        <script src="js/id3-utils.js"></script>
+        <script src="js/audio.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+              <div class="container-fluid">
+                <div class="navbar-header mg-navbar-header">
+                  <a class="navbar-brand mg-navbar-brand" href="#">
+                    <img alt="Brand" src="assets/back.svg">
+                  </a>
+                  <a class="navbar-brand mg-navbar-title" href="#">小黄人音乐</a>
+                  <div class="mg-navbar-option">
+                    <img src="assets/share2.svg" >
+                  </div>
+                </div>
+              </div>
+            </nav>
+        </header>
+        
+        <section>
+            <div id="album">
+                <div class="mg-album center-block">
+                    <img class="img-responsive" src="assets/ablum@3x.png">
+                </div>
+            </div>
+        </section>
+        
+        <section id="music-info">
+            <div class="mg-music-info">
+                <div id="music-title" class="text-center">
+                    <text>虹之间</text>
+                </div>
+                <div class="text-center">
+                    <text style="font-size:9px;">|</text>
+                </div>
+                <div id="music-album" class="text-center">
+                    <text>小黄人乐团</text>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div id="controller">
+                <div class="row mg-controller">
+                    <div class="col-xs-2 height-match-parent">
+                        <div id="play" class="height-match-parent">
+                        <div class="vertical-center">
+                            <img src="assets/play.svg" />
+                        </div>
+                    </div>
+                    </div>
+                    <div  class="col-xs-2 height-match-parent">
+                        <div id="next" class="height-match-parent">
+                            <div class="vertical-center">
+                                <img src="assets/next.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="col-xs-8 height-match-parent">
+                        <div id="progress" class="height-match-parent">
+                            <div class="vertical-center">
+                                <div class="progress mg-progress">
+                                    <div class="progress-bar mg-controller-progress-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                        <span class="sr-only">40% 完成</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </footer>
+        
+        <script src="js/player.js" type="text/javascript"></script>
+    </body>
+</html>
