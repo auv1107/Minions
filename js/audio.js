@@ -1,12 +1,12 @@
-var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
 
 function loadAudio(url, cb) {
     var request = new XMLHttpRequest();
     request.open('GET', url, true);
     request.responseType = 'arraybuffer';
-    request.onload = function() {
+    request.onload = function () {
         console.log('onload');
-        audioCtx.decodeAudioData(request.response, function(buffer) {
+        audioCtx.decodeAudioData(request.response, function (buffer) {
             console.log('decoded');
             if (cb && cb != null) {
                 cb(buffer);
@@ -17,7 +17,7 @@ function loadAudio(url, cb) {
             console.log(e.message);
         });
     };
-    
+
     request.send();
 }
 

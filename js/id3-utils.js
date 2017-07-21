@@ -1,14 +1,17 @@
-var $ = function(e){return document.getElementById(e);};
+var $ = function (e) {
+    return document.getElementById(e);
+};
 
 function loadUrl(url, callback, reader) {
-    ID3.loadTags(url, function() {
+    ID3.loadTags(url, function () {
         var tags = ID3.getAllTags(url);
-	    if( callback ) {
+        if (callback) {
             callback(tags);
         };
-    },
-    {tags: ["artist", "title", "album", "year", "comment", "track", "genre", "lyrics", "picture"],
-     dataReader: reader});
+    }, {
+        tags: ["artist", "title", "album", "year", "comment", "track", "genre", "lyrics", "picture"],
+        dataReader: reader
+    });
 }
 
 function loadFromLink(link) {
@@ -16,7 +19,7 @@ function loadFromLink(link) {
     var url = link.href;
 
     loading.style.display = "inline";
-    loadUrl(url, function() {
+    loadUrl(url, function () {
         loading.style.display = "none";
     });
 }
@@ -33,4 +36,3 @@ function load(elem) {
         loadFromLink(elem);
     }
 }
-

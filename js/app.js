@@ -21,12 +21,12 @@ var musiclistcontainer = new Vue({
         desc: function (file) {
             var res = "";
             var join = "";
-            if (file.artist && file.artist.length > 0
-               && file.album && file.album.length > 0) {
+            if (file.artist && file.artist.length > 0 &&
+                file.album && file.album.length > 0) {
                 join = " - ";
             }
             var res = (file.artist || "") + join + (file.album || "");
-            
+
             return res;
         },
         clicked: function (file) {
@@ -40,14 +40,14 @@ var musiclistcontainer = new Vue({
 var appform = new Vue({
     el: '#app-form',
     methods: {
-        onchanged: function (e,c,a,b) {
+        onchanged: function (e, c, a, b) {
             var files = this.$refs.xFile.files;
 
             for (var key in files) {
                 if (key === "length") {
                     break;
                 }
-                
+
                 var file = files[key];
 
                 loadFromFile(file, function (tags) {
