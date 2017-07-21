@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title>Debug</title>
-        <script src="https://unpkg.com/vue"></script>
+        <script src="js/vue.js"></script>
+        <script src="js/audio.js"></script>
     </head>
     <body>
         Debug
@@ -16,6 +17,17 @@
         </div>
         <script src="js/debug.js">
             
+        </script>
+        <script src="js/lib/audio.js"></script>
+        <script type="text/javascript">
+            var music = new Music();
+
+            music.oninited = function () {
+                console.log("duration is " + music.duration());
+                console.log("duration is " + music.state());
+            }
+//            music.init('assets/Alessia.mp3');
+
         </script>
     </body>
 </html>
