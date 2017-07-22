@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/player.css">
 
-    <script src="js/vconsole.min.js"></script>
-    <script src="js/vue.js"></script>
-    <script src="js/id3-minimized.js"></script>
-    <script src="js/id3-utils.js"></script>
-    <script src="js/audio.js"></script>
+    <script src="js/lib/vconsole.min.js"></script>
+    <script src="js/lib/vue.js"></script>
+    <script src="js/lib/id3-minimized.js"></script>
+    <script src="js/common/id3-utils.js"></script>
+    <script src="js/lib/music.js"></script>
 </head>
 
 <body>
@@ -63,7 +63,7 @@
                 <div class="col-xs-2 height-match-parent">
                     <div id="play" class="height-match-parent">
                         <div class="vertical-center">
-                            <img src="assets/play.svg" />
+                            <img id="play-btn" src="assets/play.svg" @click="clicked" />
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                     <div id="progress" class="height-match-parent">
                         <div class="vertical-center">
                             <div class="progress mg-progress">
-                                <div class="progress-bar mg-controller-progress-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                <div ref="progressInside" class="progress-bar mg-controller-progress-bg" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
                                     <span class="sr-only">40% 完成</span>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
         </div>
     </footer>
 
-    <script src="js/player.js" type="text/javascript"></script>
+    <script src="js/app/player.js" type="text/javascript"></script>
 </body>
 
 </html>
